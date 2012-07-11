@@ -194,9 +194,7 @@ a:focus {
 
 }
 
-
-
-.title{
+.big-black-slide{
     background: #000000; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover,  #000000 0%, #222222 50%, #333333 100%); /* FF3.6+ */
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#000000), color-stop(50%,#222222), color-stop(100%,#333333)); /* Chrome,Safari4+ */
@@ -209,6 +207,20 @@ a:focus {
     font-family: "myriad-pro-condensed";
     font-weight: 700;
     color: #FF0000;
+    line-height: 1.3;
+
+    strong{
+        font-weight: inherit;
+        color: #FFFFFF;
+    }
+
+}
+
+
+.title{
+    @extend .big-black-slide;
+    
+    
 
     &:before{
 	    content: url(adobe_logo.png);
@@ -223,10 +235,7 @@ a:focus {
 	    font-size: 80px;
 	}
 
-	strong{
-	    font-weight: normal;
-	    color: #FFFFFF;
-	}
+	
 
 
 }
@@ -234,26 +243,11 @@ a:focus {
 
 
 .question{
-    background: #000000; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #000000 0%, #222222 50%, #333333 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#000000), color-stop(50%,#222222), color-stop(100%,#333333)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #000000 0%,#222222 50%,#333333 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    @extend .big-black-slide;
 
-    font-family: "myriad-pro-condensed";
-    font-weight: 600;
-    color: #FF0000;
 
     font-size: 80px;
     display: table;
-
-    strong{
-	    font-weight: normal;
-	    color: #FFFFFF;
-	}
 
 	div{
 	    display: table-cell;
@@ -298,6 +292,16 @@ a:focus {
 	    position: absolute;
 	    padding-left: 5px;
 	}
+
+    ul{
+        position: absolute;
+        left: 50%;
+        top: 250px;
+        font-size: 150%;
+    }
+    li{
+        padding-bottom: 20px;
+    }
 
 }
 

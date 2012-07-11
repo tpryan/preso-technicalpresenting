@@ -175,7 +175,7 @@ a:focus {
     color: #FF0000;
     font-size: 40px; }
 
-.title {
+.big-black-slide, .title, .question {
   background: #000000;
   /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover, black 0%, #222222 50%, #333333 100%);
@@ -194,45 +194,25 @@ a:focus {
   /* IE6-9 fallback on horizontal gradient */
   font-family: "myriad-pro-condensed";
   font-weight: 700;
-  color: #FF0000; }
-  .title:before {
-    content: url(adobe_logo.png);
-    position: absolute;
-    top: -1px;
-    right: 20px; }
-  .title h1 {
-    margin-top: 300px;
-    margin-bottom: 100px;
-    font-size: 80px; }
-  .title strong {
-    font-weight: normal;
+  color: #FF0000;
+  line-height: 1.3; }
+  .big-black-slide strong, .title strong, .question strong {
+    font-weight: inherit;
     color: #FFFFFF; }
 
+.title:before {
+  content: url(adobe_logo.png);
+  position: absolute;
+  top: -1px;
+  right: 20px; }
+.title h1 {
+  margin-top: 300px;
+  margin-bottom: 100px;
+  font-size: 80px; }
+
 .question {
-  background: #000000;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, black 0%, #222222 50%, #333333 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, black), color-stop(50%, #222222), color-stop(100%, #333333));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, black 0%, #222222 50%, #333333 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, black 0%, #222222 50%, #333333 100%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, black 0%, #222222 50%, #333333 100%);
-  /* IE10+ */
-  background: radial-gradient(center, ellipse cover, black 0%, #222222 50%, #333333 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#333333',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  font-family: "myriad-pro-condensed";
-  font-weight: 600;
-  color: #FF0000;
   font-size: 80px;
   display: table; }
-  .question strong {
-    font-weight: normal;
-    color: #FFFFFF; }
   .question div {
     display: table-cell;
     vertical-align: middle;
@@ -272,6 +252,13 @@ a:focus {
     top: 500px;
     position: absolute;
     padding-left: 5px; }
+  .sectionheader ul {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    font-size: 150%; }
+  .sectionheader li {
+    padding-bottom: 20px; }
 
 .demo {
   display: table; }
