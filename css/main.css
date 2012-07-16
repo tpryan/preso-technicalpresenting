@@ -46,6 +46,9 @@ table {
 .impress-supported .fallback-message {
   display: none; }
 
+.columns {
+  width: 100%; }
+
 h1 {
   font-family: "myriad-pro-condensed";
   font-weight: 600; }
